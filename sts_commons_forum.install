@@ -1,0 +1,36 @@
+<?php
+
+function sts_commons_forum_schema() {
+  $schema = array();
+
+  $schema['sts_commons_forum'] = array(
+    'fields' => array(
+      'gid' => array(
+				'description' => 'The group id',
+        'type' => 'int',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+      ),
+      'fctid' => array(
+				'description' => 'common tid for the forum container of the group',
+        'type' => 'int',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+      ),
+    ),
+		'primary key' => array('gid'),
+  );
+	 
+  return $schema;
+}
+
+/**
+ * Implementation of hook_install().
+ */
+function sts_commons_forum_install() {
+  drupal_install_schema('sts_commons_forum');
+}
+
+function sts_commons_forum_uninstall() {
+  drupal_uninstall_schema('sts_commons_forum');
+}
