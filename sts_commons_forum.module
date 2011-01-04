@@ -3,6 +3,17 @@
 include_once('sts_commons_forum.features.inc');
 
 /**
+ *  Tell Advanced forum about my drupal commons theme
+ */
+function sts_commons_forum_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'advanced_forum') {
+    return 'drupal_commons_af';
+  }
+}
+
+
+
+/**
  * Implementation of hook_form_alter().
  */
  function sts_commons_forum_form_alter(&$form, &$form_state, $form_id) {

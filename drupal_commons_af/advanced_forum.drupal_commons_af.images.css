@@ -1,0 +1,95 @@
+/* FORUM LIST ICONS *********************************************************/
+td.forum-icon {
+  text-indent: -9999px;
+  width: 50px;
+  height: 50px;
+}
+
+
+.forum-folder, tr.even td.forum-folder, tr.odd td.forum-folder {
+  background: transparent url(images/forum-folder.png) no-repeat center center;
+}
+
+.forum-folder, tr.even td.forum-folder-new-posts, tr.odd td.forum-folder-new-posts {
+  background: transparent url(images/forum-folder-new-posts.png) no-repeat center center;
+}
+
+.forum-folder, tr.even td.forum-folder-locked, tr.odd td.forum-folder-locked {
+  background: transparent url(images/forum-folder-locked.png) no-repeat center center;
+}
+
+/* FORUM LIST ICON LEGEND ***************************************************/
+.forum-folder-legend .forum-folder {
+  background: transparent url(images/forum-folder.png) no-repeat top left;
+}
+
+.forum-folder-legend .forum-folder-new-posts {
+  background: transparent url(images/forum-folder-new-posts.png) no-repeat top left;
+}
+
+.forum-folder-legend .forum-folder-locked {
+  background: transparent url(images/forum-folder-locked.png) no-repeat top left;
+}
+
+/* removing silver bells stuff ******************/
+
+.forum-icon-wrapper {
+  border-top: none;
+  background: none;
+  background: none;
+  background: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: none;
+  font-family: none;
+  text-decoration: none;
+  vertical-align: none;
+  margin: none;
+  width: none;
+  height: none;
+  display: none; 
+}
+
+tr.even td.forum-folder .forum-icon-wrapper span, 
+tr.odd td.forum-folder .forum-icon-wrapper span {
+  background: none;
+}
+
+tr.even td.forum-folder-new-posts .forum-icon-wrapper span, 
+tr.odd td.forum-folder-new-posts .forum-icon-wrapper span {
+  background: none;
+}
+
+/* FORUM LIST ICON LEGEND ***************************************************/
+.forum-folder-legend .forum-folder {
+  background: transparent url(images/forum_list_default.png) no-repeat top left;
+}
+
+.forum-folder-legend .forum-folder-new-posts {
+  background: transparent url(images/forum_list_new_posts.png) no-repeat top left;
+}
+
+
+/* BUTTONIZED LINKS - GENERAL ***********************************************/
+/* Based on http://css-tricks.com/examples/ButtonMaker */
+
+
+.af-button-large,
+.af-button-small,
+.author-pane-link {
+   -webkit-border-radius: none;
+   -moz-border-radius: none;
+   border-radius: none;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#DFDFDF));
+   background: -moz-linear-gradient(top, #f8f8f8, #DFDFDF);
+}
+
+

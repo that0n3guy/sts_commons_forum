@@ -1,0 +1,13 @@
+; $Id: silver_boxy.info,v 1.1.2.1 2010/12/22 03:06:00 petero Exp $
+
+name = Drupal Commons AF
+description = Shades of grey and white.
+version = 2.x
+base style = silver_bells
+
+; Information added by drupal.org packaging script on 2010-12-26
+version = "6.x-2.x-dev"
+core = "6.x"
+project = "advanced_forum"
+datestamp = "1293365058"
+
